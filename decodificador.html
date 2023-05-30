@@ -18,8 +18,8 @@
                     </div> 
                     
                     <div class="decodificadores">
-                        <button id="button-cripto">Criptografar</button>
-                        <button id="button-descripto">Descriptografar</button>
+                        <button id="botao-cripto">Criptografar</button>
+                        <button id="botao-descripto">Descriptografar</button>
                     </div>
 
                 </section>
@@ -33,7 +33,7 @@
                     
                     <div class="tela-final">
                         <textarea class="saida"></textarea>
-                        <button id="button-copy">Copiar</button>
+                        <button id="botao-copiar">Copiar</button>
                     </div>
                 </section>
             </div>
@@ -53,7 +53,7 @@
 
 					    textoSaida.value = novoTexto;
 					}
-					var buttonCripto = document.getElementById("button-cripto");
+					var buttonCripto = document.getElementById("botao-cripto");
 					buttonCripto.onclick = function () {
 					    criptografar();
 					    exibirSaidaMensagem();
@@ -72,7 +72,7 @@
 
 					    textoSaida.value = novoTexto;
 					}
-					var buttonDescripto = document.getElementById("button-descripto");
+					var buttonDescripto = document.getElementById("botao-descripto");
 					buttonDescripto.onclick = function () {
 					    descriptografar();
 					    exibirSaidaMensagem();
@@ -84,11 +84,11 @@
 					    
 					    navigator.clipboard.writeText(standBy)
 					}
-					var buttonCopy = document.getElementById("button-copy");
+					var buttonCopy = document.getElementById("botao-copiar");
 					buttonCopy.onclick = copiarParaAreadeTransferencia;
 
 					function exibirSaidaMensagem() {
-					    var buttonCopy = document.getElementById("button-copy");
+					    var buttonCopy = document.getElementById("botao-copiar");
 					    buttonCopy.style.display = "block";
 					    var textoSaida = document.getElementsByClassName("saida")[0];
 					    textoSaida.style.display = "block";
